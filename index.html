@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/owl.carousel.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            body {
+                font-family: "Montserrat", sans-serif;
+            }
+
+
+            img {
+                max-width: 100%;
+            }
+
+
+
+            a {
+                text-decoration: none;
+            }
+
+
+            .main-banner form{
+                background-color:rgba(255,255,255,0.8);
+            }
+            .main-banner-wrapper{
+                background-color:rgba(0,0,0,.6);
+
+            }
+            .main-banner{
+                background-image:url('./dist/images/banner-1.jpg');
+            }
+            .btn:hover {
+                transform: scale(1.04);
+                transition: .3s;
+            }
+
+            .owl-carousel .owl-dots {
+                display: flex;
+                justify-content: center;
+            }
+
+            .owl-carousel button.owl-dot.active {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid var(--bs-primary);
+                border-radius: 100%;
+            }
+
+            .owl-carousel button.owl-dot span {
+                margin: 3px 10px;
+                width: 5px;
+                height: 5px;
+                display: inline-block;
+                background-color: var(--bs-dark);
+                border-radius: 100%;
+            }
+
+            .award-item img {
+                max-width: 40px;
+            }
+
+            .testimonial {
+                background-size: cover;
+            }
+
+            .process-step .title:after {
+                content: " ";
+                display: block;
+                width: 50%;
+                max-width: 300px;
+                margin: 10px auto 0 auto;
+                height: 1px;
+                background-color: var(--bs-dark);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="topbar bg-primary text-white d-none d-md-block small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <a href="mailto:info@example.com" class="me-3 d-flex align-items-center py-2 text-white">
+                            <span class="bi bi-envelope me-1"></span>
+                            info@example.com
+                        </a>
+                        <a href="tel:9812345678" class="d-flex align-items-center py-2 text-white">
+                            <span class="bi bi-telephone me-1"></span>
+                            (+91) 9812345678
+                        </a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="./"><span class="text-primary">S</span>Q</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small text-uppercase fw-medium">
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-banner" style="background-image:url">
+            <div class="main-banner-wrapper py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+
+                            <form class="py-4 px-4  rounded-2 contactUsForm" >
+                                <h2 class="h2  mb-4 text-center subtitle">Get a Free Quote</h2>
+                                <div class="row g-1">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="mb-3">
+                                            <input type="text" name="name" class="input-text form-control form-control-sm py-3 px-4 rounded-5" placeholder="Your Full Name" required="required" minlength="3" maxlength="50" title="Please enter minimum 3 and maximum 50 characters"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="input-group mb-3 bg-white rounded-5 overflow-hidden"> 
+                                            <span class="input-group-text px-3 small" id="basic-addon1">+91</span>
+                                            <input type="text" name="phone" class="form-control input-number form-control-sm py-3 px-3 rounded-0" placeholder="Phone No." required="required" minlength="10" maxlength="10" title="Please enter 10 digit mobile number without 0 or country code."/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <input type="email" name="email" class="input-email form-control form-control-sm py-3 px-4 rounded-5" placeholder="Your Official Email" required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <textarea name="message" class="input-email form-control form-control-sm py-3 px-4 rounded-5" rows="5" placeholder="Your Message" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-primary btn-lg px-4 py-3 d-block w-100 rounded-5">Send</button>
+                                <div class="response"></div>
+                            </form>                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 key-highlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md pb-4">
+                        <div class="counterItem text-center">
+                            <div class="counter h1 fw-bold">10+</div>
+                            <div class="small">Years Working</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md pb-4">
+                        <div class="counterItem text-center">
+                            <div class="counter h1 fw-bold">1043+</div>
+                            <div class="small">Happy Clients</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md pb-4">
+                        <div class="counterItem text-center">
+                            <div class="counter h1 fw-bold">24x7</div>
+                            <div class="small">Dedicated Support</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md pb-4">
+                        <div class="counterItem text-center">
+                            <div class="counter h1 fw-bold">24x7</div>
+                            <div class="small">Dedicated Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-us">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="owl-carousel- whyUsCarousel-">
+                            <!--
+                                <div class="item">
+                                  <img src="./dist/images/why-01.png?v=1"/>
+                                </div>
+                                -->
+                            <div class="item">
+                                <img src="./dist/images/why-02.png?v=1"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 py-5 ">
+                        <div class="display-6 mb-3 mb-md-5 pt-md-5 fw-bold">Welcome to SQ India</div>
+                        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button class="btn btn-primary py-3 mt-3 px-4 fw-bold" type="button" data-bs-target="#contactUs" data-bs-toggle="modal">
+                        <i class="bi bi-headset"></i>
+                        Get in Touch
+                        <i class="bi bi-arrow-right ms-2"></i>
+                        </button>            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-delivered py-5 bg-light">
+            <div class="container">
+                <div class="display-6 text-center mb-5 pt-md-5 fw-bold">Our Services</div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 h-100">
+                        <div class="service-item shadow-sm bg-white h-100">
+                            <div class="service-image">
+                                <img class="card-img-top" src="./dist/images/tolet-service.jpg"/>
+                            </div>
+                            <div class="service-content p-3">
+                                <h4>To-Let Service</h4>
+                                <p class="small text-muted">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                </p>
+                                <a href="" class="btn btn-sm btn-link fw-bold">Read More &raquo;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-md-3 ">
+                        <div class="service-item shadow-sm bg-white h-100">
+                            <div class="service-image">
+                                <img class="card-img-top" src="./dist/images/placement-service.jpg"/>
+                            </div>
+                            <div class="service-content p-3">
+                                <h4>Placement Service</h4>
+                                <p class="small text-muted">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                </p>
+                                <a href="" class="btn btn-sm btn-link fw-bold">Read More &raquo;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="service-item shadow-sm bg-white h-100">
+                            <div class="service-image">
+                                <img class="card-img-top" src="./dist/images/shifting-service.webp"/>
+                            </div>
+                            <div class="service-content p-3">
+                                <h4>Shifting Service</h4>
+                                <p class="small text-muted">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                </p>
+                                <a href="" class="btn btn-sm btn-link fw-bold">Read More &raquo;</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="service-item shadow-sm bg-white h-100">
+                            <div class="service-image">
+                                <img class="card-img-top" src="./dist/images/tutor-service.jpg"/>
+                            </div>
+                            <div class="service-content p-3">
+                                <h4>Tutor Service</h4>
+                                <p class="small text-muted">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                </p>
+                                <a href="" class="btn btn-sm btn-link fw-bold">Read More &raquo;</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 testimonial" style="background-image:url('./dist/images/testimonial-bg.png')">
+              <div class="container">
+                <div class="display-6 text-center mb-5 fw-bold">Testimonials</div>
+                <div class="owl-carousel owl-theme testimonial-carousel">
+                  <div class="item">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="row align-items-center justify-content-center">
+                          <div class="col-md-3 col-6 order-md-2">
+                            <img src="./dist/images/Parul Leekha.png"/>
+                          </div>
+                          <div class="col-md-9 order-md-1">
+                            <div class="content bg-white p-4">
+                              <div class="header mb-4">
+                                <h4 class="h2">Parul Leekha</h4>
+                                <!-- <p class="small">General Manager, Commercial & Administration, BSH</p> -->
+                              </div>
+                              <div class="desc">
+                                <p class="small">
+                                  There is so much variety and the interiors are aesthetically pleasing. It is a must visit place for anyone looking for awesome floor n indoor furnishings.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="row align-items-center justify-content-center">
+                          <div class="col-md-3 col-6 order-md-2">
+                            <img src="./dist/images/nishant-kathuria.png"/>
+                          </div>
+                          <div class="col-md-9 col-6 order-md-1">
+                            <div class="content bg-white p-4">
+                              <div class="header mb-4">
+                                <h4 class="h2">Nishant Kathuria,</h4>
+                                <p class="small">General Manager, Commercial & Administration, BSH</p>
+                              </div>
+                              <div class="desc">
+                                <p class="small">
+                                  Glad to know about you guys, it was very good experience with you. The variety of products you have and the vast knowledge about the material, completely satisfied!
+                                  <br/>
+                                  Keep up the good work. 
+
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="row align-items-center justify-content-center">
+                          <div class="col-md-3 col-6 order-md-2">
+                            <img src="./dist/images/Nikhil Yadav.png"/>
+                          </div>
+                          <div class="col-md-9 order-md-1">
+                            <div class="content bg-white p-4">
+                              <div class="header mb-4">
+                                <h4 class="h2">Nikhil Yadav</h4>
+                                <!-- <p class="small">General Manager, Commercial & Administration, BSH</p> -->
+                              </div>
+                              <div class="desc">
+                                <p class="small">New brand, spectacular range and awesome services. Products are of top notch quality with unbeatable pricing.  A brand of future that you can trust.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="display-6 text-center mb-5 fw-bold">Awards & Recognitions</div>
+                <div class="owl-carousel owl-theme award-carousel">
+                    <!-- Award Item -->
+                    <div class="item">
+                        <div class="award-item border border-primary p-3 text-center rounded">
+                            <div class="image mb-3 text-center">
+                                <img src="./dist/images/01.svg" width="100" class="d-inline-block"/>
+                            </div>
+                            <div class="content small">
+                                <div class="first mb-3">
+                                    "MOST FUTURISTIC &amp; TRUSTED <strong>INTERIOR DESIGN</strong> FIRM OF THE YEAR 2022"
+                                </div>
+                                <div class="second">
+                                    National architecture &amp; interior design excellence awards
+                                </div>
+                                <div class="text-primary my-2">&mdash;</div>
+                                <strong>2021</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Award Item -->
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="display-6 text-center mb-5 fw-bold">FAQ's?</div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-question-square me-2"></i> What is Lorem Ipsum?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-question-square me-2"></i> Why do we use it?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-question-square me-2"></i> Where does it come from?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-white small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 order-sm-2 py-3 text-center text-sm-end">
+                    </div>
+                    <div class="col-sm-6 order-sm-1 py-3 text-center text-sm-start fw-medium">
+                        Copyright © 2024
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="contactUs" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Send us a message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="py-3 rounded-2 contactUsForm" >
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <input type="text" name="name" class="input-text form-control form-control-sm py-3 px-4 rounded-5" placeholder="Your Full Name" required="required" minlength="3" maxlength="50" title="Please enter minimum 3 and maximum 50 characters"/>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="input-group mb-3 bg-white rounded-5 overflow-hidden"> 
+                                        <span class="input-group-text px-3 small" id="basic-addon1">+91</span>
+                                        <input type="text" name="phone" class="form-control input-number form-control-sm py-3 px-3 rounded-0" placeholder="Contact No." required="required" minlength="10" maxlength="10" title="Please enter 10 digit mobile number without 0 or country code."/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <input type="email" name="email" class="input-email form-control form-control-sm py-3 px-4 rounded-5" placeholder="Your Official Email" required="required"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <textarea name="message" class="input-email form-control form-control-sm py-3 px-4 rounded-5" rows="5" placeholder="Your Message" required="required"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg px-5 py-3 rounded-5">Send</button>
+                            <div class="response"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="dist/js/jquery.min.js"></script>
+        <script src="dist/js/owl.carousel.min.js"></script>
+        <script src="dist/js/custom.js?v=1"></script>
+    </body>
+</html>
